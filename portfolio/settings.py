@@ -23,11 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-kx*4=!9py018rgpgdd=wqqu1)n*0l14kly@3d!=xya=i0oo5n+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =False
 
 ALLOWED_HOSTS = [
     '192.168.43.221',
     '127.0.0.1',
+    'sjef.azurewebsites.net',
 ]
 
 TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
@@ -133,3 +134,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://sjef.azurewebsites.net',
+    'https://sjef.azurewebsites.net',
+    'http://odhiambo-jeff.me',
+]
