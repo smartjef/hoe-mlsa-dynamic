@@ -6,8 +6,16 @@ The static version of this website can be found at https://smartjef.github.io/ho
 We then went on to create a dynamic version of this website using django. The dynamic version of this website can be found at https://sjef.azurewebsites.net/
 
 ## Setting up the project
-1. To set up the project, you will need to have python installed on your computer. You can download python from https://www.python.org/downloads/
-2. Once you have python,pip and virtualenv installed ,you will have to create a virtual environment. To do this, open your terminal and type in the following command:
+To set up the project, you will need to have python installed on your computer. You can download python from https://www.python.org/downloads/
+1. Clone the repository by typing in the following command in your terminal:
+```bash
+git clone https://github.com/smartjef/hoe-mlsa-dynamic.git
+```
+2. Change directory into the project folder by typing in the following command in your terminal:
+```bash
+cd hoe-mlsa-dynamic/
+```
+3. Assuming you have python,pip and virtualenv installed ,you will have to create a virtual environment. To do this, open your terminal and type in the following command:
 ```bash
 virtualenv venv
 ``` 
@@ -19,7 +27,7 @@ or
 ```bash
 python3 -m venv venv
 ```
-3. Once you have created the virtual environment, you will have to activate it. To do this, type in the following command:
+4. Once you have created the virtual environment, you will have to activate it. To do this, type in the following command:
 For Linux and Mac:
 ```bash
 source venv/bin/activate
@@ -28,23 +36,23 @@ For Windows:
 ```bash
 venv\Scripts\activate
 ```
-4. Once you have activated the virtual environment, you will have to install the requirements. To do this, type in the following command:
+5. Once you have activated the virtual environment, you will have to install the requirements. To do this, type in the following command:
 ```bash
 pip install -r requirements.txt
 ```
-5. Once you have installed the requirements, you will have to make migrations. To do this, type in the following command:
+6. Once you have installed the requirements, you will have to make migrations. To do this, type in the following command:
 ```bash
 python manage.py makemigrations
 ```
-6. Once you have made migrations, you will have to migrate. To do this, type in the following command:
+7. Once you have made migrations, you will have to migrate. To do this, type in the following command:
 ```bash
 python manage.py migrate
 ```
-7. Once you have migrated, you will have to create a superuser. To do this, type in the following command and fill in the details:
+8. Once you have migrated, you will have to create a superuser. To do this, type in the following command and fill in the details:
 ```bash
 python manage.py createsuperuser
 ```
-8. Once you have created a superuser, you may run the server. To do this, type in the following command:
+9. Once you have created a superuser, you may run the server. To do this, type in the following command:
 ```bash
 python manage.py runserver
 ```
@@ -73,7 +81,7 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
 
-9. You can now login to the admin panel by going to http://127.0.0.1:8000/mlsa/ and logging in with the superuser credentials you created earlier.
+10. You can now login to the admin panel by going to http://127.0.0.1:8000/mlsa/ and logging in with the superuser credentials you created earlier.
 
 ## Sample Images
 
