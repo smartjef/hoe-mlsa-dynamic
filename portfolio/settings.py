@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'sjef.azurewebsites.net',
     'jeff.azurewebsites.net',
+    'njorogejosh.azurewebsites.net'
 ]
 
 TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
@@ -144,4 +145,5 @@ CSRF_TRUSTED_ORIGINS = [
     'http://sjef.azurewebsites.net',
     'https://sjef.azurewebsites.net',
     'http://odhiambo-jeff.me',
+    'https://njorogejosh.azurewebsites.net',
 ]
